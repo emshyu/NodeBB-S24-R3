@@ -32,6 +32,7 @@ app.onDomReady = function () {
             await import(/* webpackChunkName: "timeago/[request]" */ 'timeago/locales/jquery.timeago.' + app.user.timeagoCode);
         }
         app.load();
+        console.log('app loaded');
     });
 };
 
